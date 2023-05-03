@@ -19,5 +19,6 @@ RUN npm run build
 # Use a lightweight web server to serve the built React app
 RUN npm install -g serve
 
+EXPOSE 3000
 # Specify the startup command to serve the React app
-CMD ["serve", "-s", "build", "-l", "3000"]
+CMD ["npm", "start"]
